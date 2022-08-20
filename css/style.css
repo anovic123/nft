@@ -617,6 +617,10 @@ body {
   margin-bottom: 0.5555555556em;
 }
 
+.invite-block {
+  background: #560b6d;
+}
+
 @supports (padding-top: clamp( 1.34375rem , 0.8649081292rem  +  2.3942093541vw , 2.6875rem )) {
   .invite-block {
     padding-top: clamp( 1.34375rem , 0.8649081292rem  +  2.3942093541vw , 2.6875rem );
@@ -629,15 +633,15 @@ body {
   }
 }
 
-@supports (padding-bottom: clamp( 1.875rem , 1.151169265rem  +  3.6191536748vw , 3.90625rem )) {
+@supports (padding-bottom: clamp( 1.34375rem , 0.8649081292rem  +  2.3942093541vw , 2.6875rem )) {
   .invite-block {
-    padding-bottom: clamp( 1.875rem , 1.151169265rem  +  3.6191536748vw , 3.90625rem );
+    padding-bottom: clamp( 1.34375rem , 0.8649081292rem  +  2.3942093541vw , 2.6875rem );
   }
 }
 
-@supports not (padding-bottom: clamp( 1.875rem , 1.151169265rem  +  3.6191536748vw , 3.90625rem )) {
+@supports not (padding-bottom: clamp( 1.34375rem , 0.8649081292rem  +  2.3942093541vw , 2.6875rem )) {
   .invite-block {
-    padding-bottom: calc(1.875rem + 2.03125 * (100vw - 20rem) / 56.125);
+    padding-bottom: calc(1.34375rem + 1.34375 * (100vw - 20rem) / 56.125);
   }
 }
 
@@ -678,7 +682,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 6.25rem;
 }
 
 .header-block-invite__title {
@@ -800,7 +803,7 @@ body {
 }
 
 .no-webp .roadmap-block__body{
-  background-image: url(img/roadmap/map.png); }
+  background-image: url(../img/roadmap/map.png); }
 
 .roadmap-block__body {
   background-repeat: no-repeat;
@@ -1664,4 +1667,4 @@ body {
 }
 }
 
-.webp .roadmap-block__body{ background-image: url(img/roadmap/map.webp); }
+.webp .roadmap-block__body{ background-image: url(../img/roadmap/map.webp); }
